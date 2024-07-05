@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP! Corn</title>
+
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
+
+    <!--- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- preload images -->
+    <link rel="preload" as="image" href="./assets/images/logo.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.png" />
+  </head>
+
+  <body id="top">
+    <!--- #HEADER-->
+    <header class="header">
+      <div class="alert">
+        <div class="container">
+          <p class="alert-text">Cashback 3% s/d 2.5RB Min. Blj Rp 55RB</p>
+        </div>
+      </div>
+
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <a href="#" class="logo">
+            <img src="favicon.png" width="25" height="14" alt="Popcorn" />
+          </a>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="Popcorn"
+            />
+          </a>
+
+          <div class="header-actions"></div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="#collection" class="navbar-link has-after"
+                  >Collection</a
+                >
+              </li>
+
+              <li>
+                <a href="shop.html" class="navbar-link has-after">Shop</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link has-after">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--- #MOBILE NAVBAR -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="popcorn"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collection</a
+            >
+          </li>
+
+          <li>
+            <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="notification-toast" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="toast-banner">
+          <img
+            src="./assets/images/7.png"
+            alt="Popcorn Caramel 125gr"
+            width="80"
+            height="70"
+          />
+        </div>
+
+        <div class="toast-detail">
+          <p class="toast-message">Someone in new just bought</p>
+
+          <p class="toast-title">Popcorn Caramel 125gr</p>
+
+          <p class="toast-meta"><time datetime="PT2M">2 Minutes</time> ago</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!--- #HERO -->
+        <section class="section hero" id="home" aria-label="hero" data-section>
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/images/hero-banner-1.png');
+                  "
+                >
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      POP! Corn: <br />
+                      Camilan Penuh Kejutan!
+                    </h1>
+
+                    <p class="hero-text">
+                      POP! Corn bukan sembarang popcorn. Dibuat dari biji jagung
+                      pilihan dan melalui proses yang cermat, POP! Corn
+                      menghasilkan popcorn yang renyah, mengembang sempurna, dan
+                      memiliki rasa yang lezat.
+                    </p>
+
+                    <p class="price">Starting at Rp. 12.000.00</p>
+
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/images/hero-banner-2.png');
+                  "
+                >
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      POP! Corn: <br />
+                      Popcorn Lezat!
+                    </h1>
+
+                    <p class="hero-text">
+                      Temukan berbagai rasa popcorn favorit Anda, dari rasa
+                      klasik seperti chocolate dan caramel hingga rasa unik
+                      seperti Coffee dan Greentea, semuanya dengan bahan halal.
+                    </p>
+
+                    <p class="price">Starting at Rp. 12.000.00</p>
+
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div
+                  class="hero-card has-bg-image"
+                  style="
+                    background-image: url('./assets/images/hero-banner-3.png');
+                  "
+                >
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      POP! Corn: <br />
+                      Popcorn Praktis & Higienis!
+                    </h1>
+
+                    <p class="hero-text">
+                      POP! Corn juga cocok untuk dinikmati dalam berbagai
+                      suasana, baik saat santai di rumah, kumpul bersama teman,
+                      ataupun saat piknik. Kemasannya yang praktis dan higienis
+                      membuatnya mudah dibawa kemana saja.
+                    </p>
+
+                    <p class="price">Starting at Rp. 12.000.00</p>
+
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #COLLECTION -->
+
+        <section
+          class="section collection"
+          id="collection"
+          aria-label="collection"
+          data-section
+        >
+          <div class="container">
+            <ul class="collection-list">
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title"></h2>
+
+                  <p class="card-text"></p>
+
+                  <a href="shop.html" class="btn-link">
+                    <span class="span"></span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-1.png');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title"></h2>
+
+                  <p class="card-text"></p>
+
+                  <a href="shop.html" class="btn-link">
+                    <span class="span"></span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-2.png');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title"></h2>
+
+                  <p class="card-text"></p>
+
+                  <a href="shop.html" class="btn-link">
+                    <span class="span"></span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection-3.png');
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #SHOP -->
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">POP! Corn</h2>
+
+              <a href="shop.html" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/1.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="popcorn"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Coffee</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">50 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/4.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="popcorn"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Original</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">60 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/5.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="popcorn"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Caramel</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">50 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/8.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Chocolate</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">70 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/11.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="popcorn"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Balado</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">60 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/12.png"
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      alt="popcorn"
+                      class="img-cover"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title">Popcorn Cheese</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">40 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BANNER
+      -->
+
+        <section class="section banner" aria-label="banner" data-section>
+          <div class="container">
+            <ul class="banner-list">
+              <li>
+                <div class="banner-card banner-card-1 has-before hover:shine">
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/banner-1.png');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="banner-card banner-card-2 has-before hover:shine">
+                  <div
+                    class="has-bg-image"
+                    style="background-image: url('./assets/images/5.png')"
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #FEATURE -->
+
+        <section class="section feature" aria-label="feature" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">Why Shop with POP! Corn?</h2>
+
+            <ul class="flex-list">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-1.png"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Guaranteed PURE"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">High Quality</h3>
+
+                  <p class="card-text">
+                    Kami menggunakan biji jagung terbaik dan bahan-bahan alami
+                    untuk menghasilkan popcorn yang lezat dan bergizi.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-2.png"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Completely Cruelty-Free"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">Low Price</h3>
+
+                  <p class="card-text">
+                    Dapatkan popcorn berkualitas tinggi dengan harga yang
+                    terjangkau di website POP! Corn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/feature-3.png"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    alt="Ingredient Sourcing"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">Halal</h3>
+
+                  <p class="card-text">
+                    Kami menggunakan bahan-bahan berkualitas tinggi dan
+                    bersertifikat halal untuk membuat popcorn yang lezat dan
+                    Anda bisa nikmati dengan tenang.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #Banner 2 -->
+
+        <section
+          class="section offer"
+          id="offer"
+          aria-label="offer"
+          data-section
+        >
+          <div class="container">
+            <figure class="offer-banner">
+              <img
+                src="./assets/images/4.png"
+                width="305"
+                height="408"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/8.png"
+                width="450"
+                height="625"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              />
+            </figure>
+            <div class="offer-content">
+              <h2 class="h2-large section-title">POP! Corn</h2>
+
+              <p class="section-text">
+                Pesan popcorn favorit Anda dengan mudah dan cepat melalui
+                website kami. Kami menawarkan berbagai pilihan pembayaran dan
+                pengiriman untuk kenyamanan Anda.
+              </p>
+
+              <a href="shop.html" class="btn btn-primary">
+                <span class="span">Shop Now</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--- #FOOTER -->
+
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text bold">+62 897-4603-760</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text bold">+62 813-1615-3263</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text">mypopcorn@gmail.com</p>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful links</p>
+            </li>
+
+            <li>
+              <a href="https://wa.me/c/628974603760" class="footer-link"
+                >WhatsApp Admin 1</a
+              >
+            </li>
+
+            <li>
+              <a href="https://wa.me/c/6281316153263" class="footer-link"
+                >WhatsApp Admin 2</a
+              >
+            </li>
+
+            <li>
+              <a href="shop.html" class="footer-link"
+                >Shop POP! Corn Official</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Infomation</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Kualitas Terjamin</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Harga Terjangkau</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Halal</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Praktis dan Higienis</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Beragam Rasa</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="newsletter-title">POP! Corn</p>
+
+            <p class="footer-text">
+              POP! Corn adalah camilan yang sehat dan bergizi. Popcorn
+              mengandung serat yang tinggi dan rendah kalori, sehingga menjadi
+              pilihan camilan yang tepat untuk Anda yang ingin menjaga
+              kesehatan.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2024 POP! Corn</p>
+          </div>
+
+          <img
+            src="./assets/images/Pop.png"
+            width="179"
+            height="26"
+            loading="lazy"
+            alt="popcorn"
+          />
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              loading="lazy"
+              alt="popcorn"
+            />
+          </a>
+
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!--- #BACK TO TOP -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--- custom js link -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

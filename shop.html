@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP! Corn</title>
+
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
+
+    <!--- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--- preload images -->
+    <link rel="preload" as="image" href="./assets/images/logo.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpeg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpeg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpeg" />
+  </head>
+
+  <body id="top">
+    <!--- #HEADER-->
+    <header class="header">
+      <div class="alert">
+        <div class="container">
+          <p class="alert-text">Cashback 3% s/d 2.5RB Min. Blj Rp 55RB</p>
+        </div>
+      </div>
+
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <a href="#" class="logo">
+            <img src="favicon.png" width="25" height="14" alt="Popcorn" />
+          </a>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="Popcorn"
+            />
+          </a>
+
+          <div class="header-actions">
+            <div class="cart-btn">
+              <span class="nav-icon">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </span>
+              <div class="cart-items">0</div>
+            </div>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="index.html" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="#products" class="navbar-link has-after">Collection</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--- #MOBILE NAVBAR -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="Popcorn"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#products" class="navbar-link" data-nav-link>Collection</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="notification-toast" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="toast-banner">
+          <img
+            src="./assets/images/12.png"
+            alt="Popcorn Cheese 75gr"
+            width="80"
+            height="70"
+          />
+        </div>
+
+        <div class="toast-detail">
+          <p class="toast-message">Someone in new just bought</p>
+
+          <p class="toast-title">Popcorn Cheese 75gr</p>
+
+          <p class="toast-meta"><time datetime="PT2M">3 Minutes</time> ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- start of products -->
+    <section class="products" id="products">
+      <div class="section-title">
+        <h2>our products</h2>
+      </div>
+
+      <div class="products-center">
+        <!-- single product start -->
+        <!-- <article class="product">
+          <div class="img-container">
+            <img
+              src="./assets/img/product-1.jpeg"
+              alt="product"
+              class="product-img"
+            />
+
+            <button class="bag-btn" data-id="1">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bag</h3>
+          <h4>Price: $16</h4>
+        </article> -->
+        <!-- single product end -->
+      </div>
+    </section>
+    <!-- end of products -->
+
+    <!-- start of cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+        </span>
+        <h2>your cart</h2>
+
+        <div class="cart-content">
+          <!-- cart item start -->
+          <!-- <div class="cart-item">
+            <img src="./assets/img/product-1.jpeg" alt="product" />
+
+            <div>
+              <h4>queen bed</h4>
+              <h5>$9.00</h5>
+              <span class="remove-item">remove</span>
+            </div>
+
+            <div>
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              <p class="item-amount">1</p>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+          </div> -->
+          <!-- cart item end -->
+        </div>
+        <!-- cart footer -->
+        <div class="cart-footer">
+          <h3>total : Rp. <b class="cart-total">0</b></h3>
+
+          <!-- clear all cart item button -->
+          <button class="clear-cart banner-btn">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+
+          <a href="payment.html" class="btn btn-primary">Payment Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of cart -->
+
+    <!--- #FOOTER -->
+
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text bold">+62 897-4603-760</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text bold">+62 813-1615-3263</p>
+            </li>
+
+            <li>
+              <p class="footer-list-text">mypopcorn@gmail.com</p>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful links</p>
+            </li>
+
+            <li>
+              <a href="https://wa.me/c/628974603760" class="footer-link"
+                >WhatsApp Admin 1</a
+              >
+            </li>
+
+            <li>
+              <a href="https://wa.me/c/6281316153263" class="footer-link"
+                >WhatsApp Admin 2</a
+              >
+            </li>
+
+            <li>
+              <a href="shop.html" class="footer-link"
+                >Shop POP! Corn Official</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Infomation</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Kualitas Terjamin</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Harga Terjangkau</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Halal</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Praktis dan Higienis</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Popcorn Beragam Rasa</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="newsletter-title">POP! Corn</p>
+
+            <p class="footer-text">
+              POP! Corn adalah camilan yang sehat dan bergizi. Popcorn
+              mengandung serat yang tinggi dan rendah kalori, sehingga menjadi
+              pilihan camilan yang tepat untuk Anda yang ingin menjaga
+              kesehatan.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2024 POP! Corn</p>
+          </div>
+
+          <img
+            src="./assets/images/Pop.png"
+            width="179"
+            height="26"
+            loading="lazy"
+            alt="Popcorn"
+          />
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              loading="lazy"
+              alt="Glowing"
+            />
+          </a>
+
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!--- #BACK TO TOP -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--- custom js link -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!--- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

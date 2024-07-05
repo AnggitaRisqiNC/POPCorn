@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP! Corn</title>
+
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
+
+    <!--- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- preload images -->
+    <link rel="preload" as="image" href="./assets/images/logo.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.png" />
+  </head>
+
+  <body id="top">
+    <!--- #HEADER-->
+    <header class="header">
+      <div class="alert">
+        <div class="container">
+          <p class="alert-text">Cashback 3% s/d 2.5RB Min. Blj Rp 55RB</p>
+        </div>
+      </div>
+
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <a href="#" class="logo">
+            <img src="favicon.png" width="25" height="14" alt="Popcorn" />
+          </a>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="Popcorn"
+            />
+          </a>
+
+          <div class="header-actions"></div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link has-after">Home</a>
+              </li>
+
+              <li>
+                <a href="shop.html" class="navbar-link has-after">Cart</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--- #MOBILE NAVBAR -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="179"
+              height="26"
+              alt="popcorn"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="shop.html" class="navbar-link" data-nav-link>Cart</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 25px;
+          background-color: #faeee6;
+        "
+      >
+        <h2 style="color: #c80036">Maaf, Halaman Ini Sedang Bermasalah 🤷🏻‍♀️</h2>
+        <p style="font-size: 1.8rem; font-weight: bold">
+          Mohon maaf atas ketidaknyamanan ini.
+        </p>
+        <p>
+          Untuk melanjutkan pemesanan, silahkan hubungi kontak di bawah ini
+          melalui <b>WhatsApp</b>, langsung klik aja namanya 😉:
+        </p>
+        <br />
+
+        <a
+          href="https://wa.me/c/6281316153263"
+          class="social-link"
+          style="
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            color: #508d4e;
+            transition: color 0.3s ease;
+          "
+        >
+          <ion-icon
+            name="logo-whatsapp"
+            style="font-size: 32px; margin-right: 10px"
+          ></ion-icon>
+          <span style="font-weight: bold; color: #508d4e"
+            >Anggita Risqi N 🎀</span
+          >
+        </a>
+
+        <p>Atau</p>
+
+        <a
+          href="https://wa.me/c/628974603760"
+          class="social-link"
+          style="
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            color: #508d4e;
+            transition: color 0.3s ease;
+          "
+        >
+          <ion-icon
+            name="logo-whatsapp"
+            style="font-size: 32px; margin-right: 10px"
+          ></ion-icon>
+          <span style="font-weight: bold; color: #508d4e"
+            >Zahra Nurhaliza 💗</span
+          >
+        </a>
+      </div>
+    </main>
+
+    <!--- custom js link -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!--- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
